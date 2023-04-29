@@ -10,9 +10,9 @@ spec:
   http:
   - match:
     - uri:
-        prefix: /productpage
+        exact: /login
     route:
     - destination:
-        host: productpage
+        host: loginapi
         port:
           number: 8080
